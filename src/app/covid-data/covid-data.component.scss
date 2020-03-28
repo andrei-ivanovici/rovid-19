@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  padding: 1em;
+  max-height: 100%;
+  position: relative;
+}
+
+.list {
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  right: 0;
+  left: 15px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  color: black;
+  border-bottom: 1px solid #c3c3c3;
+}
