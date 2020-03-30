@@ -1,3 +1,6 @@
+# Credits
+   Data is generously provided by https://github.com/pomber/covid19
+   
 # CovidRo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
