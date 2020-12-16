@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {map} from 'rxjs/operators';
-import {CovidData} from './model';
+import {DataProvider} from './data-provider';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +9,10 @@ import {CovidData} from './model';
 export class AppComponent implements OnInit {
   public data;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private dataProvider: DataProvider) {
   }
 
   ngOnInit() {
-    this.data = this.httpClient.get('https://pomber.github.io/covid19/timeseries.json')
-      .pipe(map(data => data['Romania'].filter((e: CovidData) => e.confirmed > 0)));
+    this.data = this.dataProvider.GetDataAsync();
   }
 }

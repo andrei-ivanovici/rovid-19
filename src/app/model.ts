@@ -3,4 +3,7 @@ export interface CovidData {
   confirmed: number;
   deaths: number;
   recovered: number;
+  active: number;
+  confirmedDelta: number;
+  recoveredDelta: number;
 }

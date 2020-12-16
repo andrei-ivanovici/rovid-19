@@ -18,7 +18,8 @@ export class CovidDataComponent implements OnChanges {
     if (!this.data) {
       return;
     }
-    this.listData = this.data.map((_, idx) => this.data[this.data.length - idx - 1]);
+    this.listData = this.data
+      .map((_, idx) => this.data[this.data.length - idx - 1]);
   }
 
 

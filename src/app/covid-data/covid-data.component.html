@@ -8,10 +8,19 @@
         Confirmed
       </div>
       <div>
+        Growth
+      </div>
+      <div>
         Recovered
       </div>
       <div>
-        Deths
+        Recovered Delta
+      </div>
+      <div>
+        Active
+      </div>
+      <div>
+        Deaths
       </div>
     </div>
   </mat-list-item>
@@ -26,10 +35,19 @@
       <div>
         {{item.confirmed}}
       </div>
+      <div class="confirmed-delta ">
+        {{item.confirmedDelta}}
+      </div>
       <div>
         {{item.recovered}}
       </div>
+      <div class="recovered-delta">
+        {{item.recoveredDelta}}
+      </div>
       <div>
+        {{item.active}}
+      </div>
+      <div class="deaths">
         {{item.deaths}}
       </div>
     </div>
