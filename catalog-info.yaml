@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: rovid-19
+  annotations:
+    github.com/project-slug: andrei-ivanovici/rovid-19
+spec:
+  type: other
+  lifecycle: unknown
+  owner: acme-corp
